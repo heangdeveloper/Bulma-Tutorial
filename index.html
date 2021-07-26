@@ -5,36 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <title>Card</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Breadcrumb</title>
 </head>
 <body>
     
     <div class="section">
         <div class="container">
-            <div class="columns">
-                <div class="column">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="http://placehold.jp/1280x960.png"/>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <h4>This is Title of Card</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut distinctio dignissimos veniam cumque accusantium magni ex quisquam magnam earum deleniti culpa, doloremque, excepturi impedit sequi reprehenderit eum incidunt fuga sit.</p>
-                                <a href="#" class="button is-success is-outlined">Read More</a>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="card-footer-item">Save</a>
-                            <a href="#" class="card-footer-item">Edit</a>
-                            <a href="#" class="card-footer-item">Delete</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="column"></div>
-            </div>
+            <nav class="breadcrumb has-bullet-separator is-small is-right">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon is-small">
+                                <i class="fas fa-home"></i>
+                            </span>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon is-small">
+                                <i class="fas fa-blog"></i>
+                            </span>
+                            <span>Blog</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon is-small">
+                                <i class="far fa-question-circle"></i>
+                            </span>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon is-small">
+                                <i class="far fa-envelope"></i>
+                            </span>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
-
 </body>
 </html>
