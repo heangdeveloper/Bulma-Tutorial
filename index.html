@@ -6,80 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <title>Navbar</title>
-    <style>
-        body {
-            height: 2000px;
-        }
-    </style>
+    <title>Form</title>
 </head>
 <body>
     
-    <nav class="navbar is-dark is-fixed-top">
-        <div class="container">
-            <div class="navbar-brand">
-                <a href="#" class="navbar-item">
-                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-                </a>
-
-                <a class="navbar-burger" data-target="navMenu">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-    
-            <div class="navbar-menu" id="navMenu">
-                <div class="navbar-start">
-                    <a href="#" class="navbar-item">
-                        Home
-                    </a>
-                    <a href="#" class="navbar-item">
-                        Blog
-                    </a>
-                    <a href="#" class="navbar-item">
-                        About
-                    </a>
-                    <a href="#" class="navbar-item">
-                        Contact
-                    </a>
-
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a href="#" class="navbar-link">
-                            More
-                        </a>
-
-                        <div class="navbar-dropdown is-left">
-                            <a href="#" class="navbar-item">
-                                Profile
-                            </a>
-                            <a href="#" class="navbar-item">
-                                Settings
-                            </a>
-                            <hr class="navbar-divider">
-                            <a href="#" class="navbar-item">
-                                Logout
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="navbar-end">
-                    <div class="navbar-item">
-                        <div class="buttons">
-                            <a href="#" class="button is-primary">
-                                <strong>Sing up</strong>
-                            </a>
-                            <a href="#" class="button is-light">
-                                Login
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container">
+        <div class="field">
+            <label class="label is-small">Email</label>
+            <p class="control has-icons-left">
+                <input class="input is-small" type="email" placeholder="Enter Your Email">
+                <span class="icon is-small is-left">
+                    <i class="far fa-envelope"></i>
+                </span>
+            </p>
         </div>
-    </nav>
 
-    <script src="main.js"></script>
+        <div class="field">
+            <label class="label">Password</label>
+            <p class="control has-icons-left">
+                <input class="input" type="password" placeholder="Enter Your Password">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-key"></i>
+                </span>
+            </p>
+        </div>
+
+        <div class="field">
+            <p class="control">
+                <button class="button is-success">
+                    Login
+                </button>
+            </p>
+        </div>
+    </div>
+    
 </body>
 </html>
