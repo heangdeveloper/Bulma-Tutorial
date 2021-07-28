@@ -14,7 +14,7 @@
         <div class="field">
             <label class="label is-small">Email</label>
             <p class="control has-icons-left">
-                <input class="input is-small" type="email" placeholder="Enter Your Email">
+                <input class="input is-small is-success is-rounded" type="email" placeholder="Enter Your Email" disabled>
                 <span class="icon is-small is-left">
                     <i class="far fa-envelope"></i>
                 </span>
@@ -23,12 +23,19 @@
 
         <div class="field">
             <label class="label">Password</label>
-            <p class="control has-icons-left">
-                <input class="input" type="password" placeholder="Enter Your Password">
+            <p class="control has-icons-left is-loading">
+                <input class="input is-large is-danger" type="password" placeholder="Enter Your Password" readonly>
                 <span class="icon is-small is-left">
                     <i class="fas fa-key"></i>
                 </span>
             </p>
+        </div>
+
+        <div class="field">
+            <label class="label">Message</label>
+            <div class="control is-large is-loading">
+                <textarea class="textarea is-info has-fixed-size" placeholder="e.g. Hello world" rows="10"></textarea>
+            </div>
         </div>
 
         <div class="field">
