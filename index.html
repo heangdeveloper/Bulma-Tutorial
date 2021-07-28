@@ -6,46 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <title>Form</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Modal</title>
 </head>
 <body>
     
     <div class="container">
-        <div class="field">
-            <label class="label is-small">Email</label>
-            <p class="control has-icons-left">
-                <input class="input is-small is-success is-rounded" type="email" placeholder="Enter Your Email" disabled>
-                <span class="icon is-small is-left">
-                    <i class="far fa-envelope"></i>
-                </span>
-            </p>
-        </div>
+        <button type="button" class="button is-success mt-5" id="openModal">Open Modal</button>
 
-        <div class="field">
-            <label class="label">Password</label>
-            <p class="control has-icons-left is-loading">
-                <input class="input is-large is-danger" type="password" placeholder="Enter Your Password" readonly>
-                <span class="icon is-small is-left">
-                    <i class="fas fa-key"></i>
-                </span>
-            </p>
-        </div>
 
-        <div class="field">
-            <label class="label">Message</label>
-            <div class="control is-large is-loading">
-                <textarea class="textarea is-info has-fixed-size" placeholder="e.g. Hello world" rows="10"></textarea>
+        <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Modal title</p>
+                    <button class="delete" aria-label="close" id="btnclose"></button>
+                </header>
+                <section class="modal-card-body">
+                    <!-- Content ... -->
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-success">Save changes</button>
+                    <button class="button" id="btncancle">Cancel</button>
+                </footer>
             </div>
         </div>
-
-        <div class="field">
-            <p class="control">
-                <button class="button is-success">
-                    Login
-                </button>
-            </p>
-        </div>
     </div>
-    
+
+    <script>
+        $('#openModal').click(function() {
+            $('.modal').addClass('is-active');
+        })
+
+        // $('.modal-close').click(function() {
+        //     $('.modal').removeClass('is-active')
+        // })
+
+        $('#btnclose').click(function() {
+            $('.modal').removeClass('is-active')
+        })
+
+        $('#btncancle').click(function() {
+            $('.modal').removeClass('is-active')
+        })
+    </script>
 </body>
 </html>
