@@ -7,48 +7,45 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Modal</title>
+    <title>Pagination</title>
 </head>
 <body>
     
-    <div class="container">
-        <button type="button" class="button is-success mt-5" id="openModal">Open Modal</button>
+    <div class="section">
+        <div class="container">
+            <nav class="pagination is-centered is-rounded is-small">
+                <a href="#" class="pagination-previous">Previous</a>
+                <a href="#" class="pagination-next">Next</a>
 
-
-        <div class="modal">
-            <div class="modal-background"></div>
-            <div class="modal-card">
-                <header class="modal-card-head">
-                    <p class="modal-card-title">Modal title</p>
-                    <button class="delete" aria-label="close" id="btnclose"></button>
-                </header>
-                <section class="modal-card-body">
-                    <!-- Content ... -->
-                </section>
-                <footer class="modal-card-foot">
-                    <button class="button is-success">Save changes</button>
-                    <button class="button" id="btncancle">Cancel</button>
-                </footer>
-            </div>
+                <ul class="pagination-list">
+                    <li>
+                        <a href="#" class="pagination-link">1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="pagination-link is-current">2</a>
+                    </li>
+                    <li>
+                        <span class="pagination-ellipsis">&hellip;</span>
+                    </li>
+                    <li>
+                        <a href="#" class="pagination-link">47</a>
+                    </li>
+                    <li>
+                        <a href="#" class="pagination-link">48</a>
+                    </li>
+                    <li>
+                        <a href="#" class="pagination-link">49</a>
+                    </li>
+                    <li>
+                        <span class="pagination-ellipsis">&hellip;</span>
+                    </li>
+                    <li>
+                        <a href="#" class="pagination-link">80</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 
-    <script>
-        $('#openModal').click(function() {
-            $('.modal').addClass('is-active');
-        })
-
-        // $('.modal-close').click(function() {
-        //     $('.modal').removeClass('is-active')
-        // })
-
-        $('#btnclose').click(function() {
-            $('.modal').removeClass('is-active')
-        })
-
-        $('#btncancle').click(function() {
-            $('.modal').removeClass('is-active')
-        })
-    </script>
 </body>
 </html>
